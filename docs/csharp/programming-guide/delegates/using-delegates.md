@@ -49,7 +49,7 @@ ms.locfileid: "56979835"
   
  [!code-csharp[csProgGuideDelegates#27](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#27)]  
   
- 此时，`allMethodsDelegate` 的调用列表中包含三个方法，分别为 `Method1`、`Method2` 和 `DelegateMethod`。 原有的三个委托（`d1`、`d2` 和 `d3`）保持不变。 调用 `allMethodsDelegate` 时，将按顺序调用所有三个方法。 如果委托使用引用参数，引用将按相反的顺序传递到所有这三个方法，并且一种方法进行的任何更改都将在另一种方法上见到。 当方法引发未在方法内捕获到的异常时，该异常将传递到委托的调用方，并且不会调用调用列表中的后续方法。 如果委托具有返回值和/或输出参数，它将返回上次调用方法的返回值和参数。 若要删除调用列表中的方法，请使用减法运算符或减法赋值运算符（“+”或“+=”）。 例如:  
+ 此时，`allMethodsDelegate` 的调用列表中包含三个方法，分别为 `Method1`、`Method2` 和 `DelegateMethod`。 原有的三个委托（`d1`、`d2` 和 `d3`）保持不变。 调用 `allMethodsDelegate` 时，将按顺序调用所有三个方法。 如果委托使用引用参数，引用将按相反的顺序传递到所有这三个方法，并且一种方法进行的任何更改都将在另一种方法上见到。 当方法引发未在方法内捕获到的异常时，该异常将传递到委托的调用方，并且不会调用调用列表中的后续方法。 如果委托具有返回值和/或输出参数，它将返回上次调用方法的返回值和参数。 若要删除调用列表中的方法，请使用减法运算符或减法赋值运算符（“-”或“-=”）。 例如:  
   
  [!code-csharp[csProgGuideDelegates#28](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#28)]  
   
